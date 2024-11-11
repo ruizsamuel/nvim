@@ -14,7 +14,7 @@ Here are the key plugins included in this setup:
 - **bufferline**: A modern buffer line for managing open files.
 - **lualine**: A sleek status line for better information display.
 - **telescope**: A fuzzy finder for searching files, buffers, and more.
-- **markdown-preview**: Live preview of Markdown files directly in Neovim.
+- **markdown-preview**: Live preview of Markdown files directly in Neovim (`:MarkdownPreview`).
 - **lsp-config**: Language Server Protocol (LSP) configurations to bring IDE-like features to Neovim. This includes support for:
   - **Python** (via `pyright`)
   - **Java** (via `jdtls`)
@@ -54,19 +54,29 @@ Here's a table with my custom keybindings, grouped by category:
 | **Indentation**        | `<`                         | Indent in visual mode                          |
 |                        | `>`                         | Outdent in visual mode                         |
 | **Clipboard**          | `p`                         | Paste without removing the last yank           |
-| **Telescope**          | `gd`                        | Jump to definition of word under cursor        |
+| **Telescope**          | `<leader>sh`                | Search help tags                               |
+|                        | `<leader>sk`                | Search keymaps                                 |
+|                        | `<leader>sf`                | Search files                                   |
+|                        | `<leader>ss`                | Search select Telescope                        |
+|                        | `<leader>sw`                | Search current word                            |
+|                        | `<leader>sg`                | Search by grep                                 |
+|                        | `<leader>sd`                | Search diagnostics                             |
+|                        | `<leader>sr`                | Search resume                                  |
+|                        | `<leader>s.`                | Search recent files (repeat)                   |
+|                        | `<leader><leader>`          | Find existing buffers                          |
+|                        | `gd`                        | Jump to definition of word under cursor        |
 |                        | `gr`                        | Find references for word under cursor          |
 |                        | `gI`                        | Jump to implementation of word under cursor    |
-|                        | `<leader>D`                 | Jump to type definition of word under cursor  |
+|                        | `gD`                        | Go to declaration of word under cursor         |
 |                        | `<leader>ds`                | Fuzzy find document symbols                    |
 |                        | `<leader>ws`                | Fuzzy find workspace symbols                   |
 |                        | `<leader>rn`                | Rename variable under cursor                   |
 |                        | `<leader>ca`                | Execute code action                            |
-|                        | `gD`                        | Go to declaration of word under cursor         |
 | **Autocompletion**     | `<C-n>`                     | Select next completion item                    |
 |                        | `<C-p>`                     | Select previous completion item                |
 |                        | `<C-b>`                     | Scroll docs backward                           |
 |                        | `<C-f>`                     | Scroll docs forward                            |
-|                        | `<CR>`                       | Accept completion and auto-import if supported |
+|                        | `<CR>`                      | Accept completion and auto-import if supported |
+|                        | `<ESC>`                     | Close completion menu                          |
 |                        | `<C-Space>`                 | Manually trigger completion                    |
 | **Copilot**            | `<S-Tab>`                   | Accept suggestion from GitHub Copilot          |
