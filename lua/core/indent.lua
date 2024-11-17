@@ -20,13 +20,13 @@ set_indent({ "python", "ruby", "go"}, 4, 4, true)
 set_indent({ "javascript", "typescript", "html", "css", "scss", "json", "yaml", "toml", "lua" }, 2, 2, true)
 
 -- Configuración específica para C, C++, y Java (tabulación de 4 espacios)
-set_indent({ "c", "cpp", "java" }, 4, 4, false)
+set_indent({ "c", "cpp", "java" }, 4, 4, true)
 
 -- Markdown y texto plano con 2 espacios de indentación
 set_indent({ "markdown", "text" }, 2, 2, true)
 
 -- Makefiles requieren tabulaciones reales (1 tab = 8 espacios)
-set_indent({ "make" }, 8, 8, false)
+set_indent({ "make" }, 8, 8, true)
 
 -- Configuración para lenguajes de script (bash, zsh, etc.)
 set_indent({ "sh", "bash", "zsh" }, 4, 4, true)
