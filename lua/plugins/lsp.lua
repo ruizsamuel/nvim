@@ -173,6 +173,7 @@ return {
           }
         }
       },
+      solargraph = {},
       pylsp = {
         settings = {
           pylsp = {

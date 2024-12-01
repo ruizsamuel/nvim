@@ -25,6 +25,7 @@ Here are the key plugins included in this setup:
   - **HTML/CSS** (via `html` and `cssls`)
   - **JSON** (via `jsonls`)
   - **YAML** (via `yamlls`)
+  - **Ruby** (via `solargraph`)
 - **autocompletion**: Auto-completion features with smart suggestions.
 - **mini.indentscope**: Visual guides for indentation to improve code readability.
 - **copilot**: GitHub Copilot for AI-powered code suggestions.
