@@ -14,10 +14,10 @@ end
 -- Configuración de indentación para varios lenguajes
 
 -- Lenguajes de programación comunes con 4 espacios de indentación
-set_indent({ "python", "ruby", "go"}, 4, 4, true)
+set_indent({ "python", "go"}, 4, 4, true)
 
 -- Lenguajes de programación comunes con 2 espacios de indentación
-set_indent({ "javascript", "typescript", "html", "css", "scss", "json", "yaml", "toml", "lua" }, 2, 2, true)
+set_indent({ "javascript", "ruby",  "typescript", "html", "css", "scss", "json", "yaml", "toml", "lua" }, 2, 2, true)
 
 -- Configuración específica para C, C++, y Java (tabulación de 4 espacios)
 set_indent({ "c", "cpp", "java" }, 4, 4, true)

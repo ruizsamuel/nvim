@@ -173,6 +173,7 @@ return {
           }
         }
       },
+      angularls = {},
       solargraph = {},
       pylsp = {
         settings = {
