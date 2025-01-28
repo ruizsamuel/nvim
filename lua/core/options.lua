@@ -42,3 +42,11 @@ vim.opt.list = true -- Activar la visualización de caracteres invisibles (espac
 vim.opt.listchars:append({
   trail = '█',   -- Mostrar espacios como un bloque
 })
+-- Creates an autocommand that sets the filetype to 'html' when opening a file with the extension '.html'
+vim.api.nvim_create_autocmd({"BufRead", "BufNewFile"}, {
+  pattern = "*.html", -- Archivo con extensión .html
+  callback = function()
+    vim.opt.filetype = "html" -- Establece el tipo de archivo a 'html'
+  end
+})
+

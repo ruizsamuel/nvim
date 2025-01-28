@@ -174,6 +174,7 @@ return {
         }
       },
       html = { filetypes = { 'html', 'twig', 'hbs' } },
+      angularls = {},
       solargraph = {},
       pylsp = {
         settings = {
