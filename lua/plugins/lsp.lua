@@ -173,7 +173,7 @@ return {
           }
         }
       },
-      angularls = {},
+      html = { filetypes = { 'html', 'twig', 'hbs' } },
       solargraph = {},
       pylsp = {
         settings = {
@@ -191,7 +191,6 @@ return {
           },
         },
       },
-      html = { filetypes = { 'html', 'twig', 'hbs' } },
       cssls = {},
       tailwindcss = {},
       dockerls = {},

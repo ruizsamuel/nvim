@@ -21,7 +21,6 @@ Here are the key plugins included in this setup:
   - **C/C++** (via `clangd`)
   - **Docker** (via `dockerls`)
   - **JavaScript/TypeScript** (via `ts_ls`)
-  - **Angular** (via `angularls`)
   - **Lua** (via `lua_ls`)
   - **HTML/CSS** (via `html` and `cssls`)
   - **JSON** (via `jsonls`)
