@@ -6,6 +6,18 @@ Here’s how my Neovim setup looks in action:
 
 ![Neovim Screenshot](.pics/screenshot.png)
 
+## Requirements
+
+- **Neovim** (0.8 or higher)
+- **Node Package Manager**
+
+## Install
+
+```bash
+$ cd ~/.config
+$ git clone https://github.com/ruizsamuel/nvim
+```
+
 ## Plugins
 
 Here are the key plugins included in this setup:
@@ -26,7 +38,6 @@ Here are the key plugins included in this setup:
   - **HTML/CSS** (via `html` and `cssls`)
   - **JSON** (via `jsonls`)
   - **YAML** (via `yamlls`)
-  - **Ruby** (via `solargraph`)
 - **autocompletion**: Auto-completion features with smart suggestions.
 - **mini.indentscope**: Visual guides for indentation to improve code readability.
 - **copilot**: GitHub Copilot for AI-powered code suggestions.
