@@ -41,6 +41,7 @@ Here are the key plugins included in this setup:
 - **autocompletion**: Auto-completion features with smart suggestions.
 - **mini.indentscope**: Visual guides for indentation to improve code readability.
 - **copilot**: GitHub Copilot for AI-powered code suggestions.
+- **copilot-chat**: Chat interface for Copilot to interactively discuss code.
 - **neotree**: A file explorer for easy navigation through your project.
 
 ---
@@ -51,54 +52,54 @@ Here's a table with my custom keybindings, grouped by category:
 
 | **Category**           | **Key Mapping**             | **Action**                                      |
 |------------------------|-----------------------------|------------------------------------------------|
-| **General**            | `<C-s>`                     | Save file                                      |
-| **Buffers**            | `<S-Tab>`                   | Switch to next buffer                          |
-|                        | `<Tab>`                     | Switch to previous buffer                      |
-|                        | `<C-q>`                     | Close buffer with confirmation                 |
-| **Window Splitting**   | `<leader>ll`                | Vertical split                                 |
-|                        | `<leader>jj`                | Horizontal split                               |
-|                        | `<A-Up>`                    | Resize window up                               |
-|                        | `<A-Down>`                  | Resize window down                             |
-|                        | `<A-Right>`                 | Resize window right                            |
-|                        | `<A-Left>`                  | Resize window left                             |
-| **Window Switching**   | `<A-l>`                     | Switch to next window                          |
-|                        | `<A-h>`                     | Switch to previous window                      |
-| **Neotree**            | `<leader>ee`                | Open Neotree file explorer                     |
-| **Indentation**        | `<`                         | Indent in visual mode                          |
-|                        | `>`                         | Outdent in visual mode                         |
-| **Clipboard**          | `p`                         | Paste without removing the last yank           |
-| **Telescope**          | `<leader>sh`                | Search help tags                               |
-|                        | `<leader>sk`                | Search keymaps                                 |
-|                        | `<leader>sf`                | Search files                                   |
-|                        | `<leader>ss`                | Search select Telescope                        |
-|                        | `<leader>sw`                | Search current word                            |
-|                        | `<leader>sg`                | Search by grep                                 |
-|                        | `<leader>sd`                | Search diagnostics                             |
-|                        | `<leader>sr`                | Search resume                                  |
-|                        | `<leader>s.`                | Search recent files (repeat)                   |
-|                        | `<leader><leader>`          | Find existing buffers                          |
-|                        | `gd`                        | Jump to definition of word under cursor        |
-|                        | `gr`                        | Find references for word under cursor          |
-|                        | `gI`                        | Jump to implementation of word under cursor    |
-|                        | `gD`                        | Go to declaration of word under cursor         |
-|                        | `<leader>ds`                | Fuzzy find document symbols                    |
-|                        | `<leader>ws`                | Fuzzy find workspace symbols                   |
-|                        | `<leader>rn`                | Rename variable under cursor                   |
-|                        | `<leader>ca`                | Execute code action                            |
-| **Autocompletion**     | `<C-n>`                     | Select next completion item                    |
-|                        | `<C-p>`                     | Select previous completion item                |
-|                        | `<C-b>`                     | Scroll docs backward                           |
-|                        | `<C-f>`                     | Scroll docs forward                            |
-|                        | `<CR>`                      | Accept completion and auto-import if supported |
-|                        | `<ESC>`                     | Close completion menu                          |
-|                        | `<C-Space>`                 | Manually trigger completion                    |
-| **Copilot**           | `<S-Tab>` (Insert) | Accept Copilot suggestion                      |
-| **CopilotChat**        | `<leader>zc` (Normal)       | Chat with Copilot                             |
-|                    | `<leader>ze` (Visual)       | Explain Code                                  |
-|                    | `<leader>zr` (Visual)       | Review Code                                   |
-|                    | `<leader>zf` (Visual)       | Fix Code Issues                               |
-|                    | `<leader>zo` (Visual)       | Optimize Code                                 |
-|                    | `<leader>zd` (Visual)       | Generate Docs                                 |
-|                    | `<leader>zt` (Visual)       | Generate Tests                                |
-|                    | `<leader>zm` (Normal)       | Generate Commit Message                       |
-|                    | `<leader>zs` (Visual)       | Generate Commit for Selection                 |
+| **General**            | `<C-s>` (Normal)            | Save file                                      |
+| **Buffers**            | `<S-Tab>` (Normal)          | Switch to next buffer                          |
+|                        | `<Tab>` (Normal)            | Switch to previous buffer                      |
+|                        | `<C-q>` (Normal)            | Close buffer with confirmation                 |
+| **Window Splitting**   | `<leader>ll` (Normal)       | Vertical split                                 |
+|                        | `<leader>jj` (Normal)       | Horizontal split                               |
+|                        | `<A-Up>` (Normal)           | Resize window up                               |
+|                        | `<A-Down>` (Normal)         | Resize window down                             |
+|                        | `<A-Right>` (Normal)        | Resize window right                            |
+|                        | `<A-Left>` (Normal)         | Resize window left                             |
+| **Window Switching**   | `<A-l>` (Normal)            | Switch to next window                          |
+|                        | `<A-h>` (Normal)            | Switch to previous window                      |
+| **Neotree**           | `<leader>ee` (Normal)       | Open Neotree file explorer                     |
+| **Indentation**        | `<` (Visual)                      | Indent in visual mode                          |
+|                        | `>` (Visual)                      | Outdent in visual mode                         |
+| **Clipboard**          | `p` (Normal)                        | Paste without removing the last yank           |
+| **Telescope**          | `<leader>sh` (Normal)       | Search help tags                               |
+|                        | `<leader>sk` (Normal)       | Search keymaps                                 |
+|                        | `<leader>sf` (Normal)       | Search files                                   |
+|                        | `<leader>ss` (Normal)       | Search select Telescope                        |
+|                        | `<leader>sw` (Normal)       | Search current word                            |
+|                        | `<leader>sg` (Normal)       | Search by grep                                 |
+|                        | `<leader>sd` (Normal)       | Search diagnostics                             |
+|                        | `<leader>sr` (Normal)       | Search resume                                  |
+|                        | `<leader>s.` (Normal)       | Search recent files (repeat)                   |
+|                        | `<leader><leader>` (Normal) | Find existing buffers                          |
+|                        | `gd` (Normal)               | Jump to definition of word under cursor        |
+|                        | `gr` (Normal)               | Find references for word under cursor          |
+|                        | `gI` (Normal)               | Jump to implementation of word under cursor    |
+|                        | `gD` (Normal)               | Go to declaration of word under cursor         |
+|                        | `<leader>ds` (Normal)       | Fuzzy find document symbols                    |
+|                        | `<leader>ws` (Normal)       | Fuzzy find workspace symbols                   |
+|                        | `<leader>rn` (Normal)       | Rename variable under cursor                   |
+|                        | `<leader>ca` (Normal)       | Execute code action                            |
+| **Autocompletion**     | `<C-n>` (Insert)           | Select next completion item                    |
+|                        | `<C-p>` (Insert)           | Select previous completion item                |
+|                        | `<C-b>` (Insert)           | Scroll docs backward                           |
+|                        | `<C-f>` (Insert)           | Scroll docs forward                            |
+|                        | `<CR>` (Insert)            | Accept completion and auto-import if supported |
+|                        | `<ESC>` (Insert)           | Close completion menu                          |
+|                        | `<C-Space>` (Insert)       | Manually trigger completion                    |
+| **Copilot**           | `<S-Tab>` (Insert)         | Accept Copilot suggestion                      |
+| **CopilotChat**       | `<leader>zc` (Normal)      | Chat with Copilot                             |
+|                       | `<leader>ze` (Visual)       | Explain Code                                  |
+|                       | `<leader>zr` (Visual)       | Review Code                                   |
+|                       | `<leader>zf` (Visual)       | Fix Code Issues                               |
+|                       | `<leader>zo` (Visual)       | Optimize Code                                 |
+|                       | `<leader>zd` (Visual)       | Generate Docs                                 |
+|                       | `<leader>zt` (Visual)       | Generate Tests                                |
+|                       | `<leader>zm` (Normal)       | Generate Commit Message                       |
+|                       | `<leader>zs` (Visual)       | Generate Commit for Selection                 |
