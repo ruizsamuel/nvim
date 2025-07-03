@@ -92,7 +92,7 @@ Here's a table with my custom keybindings, grouped by category:
 |                        | `<CR>`                      | Accept completion and auto-import if supported |
 |                        | `<ESC>`                     | Close completion menu                          |
 |                        | `<C-Space>`                 | Manually trigger completion                    |
-| **Copilot**           |<S-Tab> (Insert) | Accept Copilot suggestion                      |
+| **Copilot**           | `<S-Tab>` (Insert) | Accept Copilot suggestion                      |
 | **CopilotChat**        | `<leader>zc` (Normal)       | Chat with Copilot                             |
 |                    | `<leader>ze` (Visual)       | Explain Code                                  |
 |                    | `<leader>zr` (Visual)       | Review Code                                   |
