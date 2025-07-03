@@ -27,5 +27,6 @@ require('lazy').setup({
   require 'plugins.lsp',
   require 'plugins.autocompletion',
   require 'plugins.indent-lines',
-  require 'plugins.copilot'
+  require 'plugins.copilot',
+  require 'plugins.copilotchat',
 })

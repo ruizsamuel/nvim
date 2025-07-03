@@ -92,4 +92,13 @@ Here's a table with my custom keybindings, grouped by category:
 |                        | `<CR>`                      | Accept completion and auto-import if supported |
 |                        | `<ESC>`                     | Close completion menu                          |
 |                        | `<C-Space>`                 | Manually trigger completion                    |
-| **Copilot**            | `<S-Tab>`                   | Accept suggestion from GitHub Copilot          |
+| **Copilot**           |<S-Tab> (Insert) | Accept Copilot suggestion                      |
+| **CopilotChat**        | `<leader>zc` (Normal)       | Chat with Copilot                             |
+|                    | `<leader>ze` (Visual)       | Explain Code                                  |
+|                    | `<leader>zr` (Visual)       | Review Code                                   |
+|                    | `<leader>zf` (Visual)       | Fix Code Issues                               |
+|                    | `<leader>zo` (Visual)       | Optimize Code                                 |
+|                    | `<leader>zd` (Visual)       | Generate Docs                                 |
+|                    | `<leader>zt` (Visual)       | Generate Tests                                |
+|                    | `<leader>zm` (Normal)       | Generate Commit Message                       |
+|                    | `<leader>zs` (Visual)       | Generate Commit for Selection                 |
