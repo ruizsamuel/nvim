@@ -58,10 +58,10 @@ Here's a table with my custom keybindings, grouped by category:
 |                        | `<C-q>` (Normal)            | Close buffer with confirmation                 |
 | **Window Splitting**   | `<leader>ll` (Normal)       | Vertical split                                 |
 |                        | `<leader>jj` (Normal)       | Horizontal split                               |
-|                        | `<A-Up>` (Normal)           | Resize window up                               |
-|                        | `<A-Down>` (Normal)         | Resize window down                             |
-|                        | `<A-Right>` (Normal)        | Resize window right                            |
-|                        | `<A-Left>` (Normal)         | Resize window left                             |
+|                        | `<A-S-Up>` (Normal)           | Resize window up                               |
+|                        | `<A-S-Down>` (Normal)         | Resize window down                             |
+|                        | `<A-S-Right>` (Normal)        | Resize window right                            |
+|                        | `<A-S-Left>` (Normal)         | Resize window left                             |
 | **Window Switching**   | `<A-l>` (Normal)            | Switch to next window                          |
 |                        | `<A-h>` (Normal)            | Switch to previous window                      |
 | **Neotree**           | `<leader>ee` (Normal)       | Open Neotree file explorer                     |

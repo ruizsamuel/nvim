@@ -27,10 +27,10 @@ vim.keymap.set('n', '<C-q>', ':bp<bar>sp<bar>bn<bar>confirm bd<CR>', opts)
 -- Window splitting
 vim.keymap.set('n', '<leader>ll', ':vsplit<CR>', opts)
 vim.keymap.set('n', '<leader>jj', ':split<CR>', opts)
-vim.keymap.set('n', '<A-Up>', ':resize -2<CR>', opts)
-vim.keymap.set('n', '<A-Down>', ':resize +2<CR>', opts)
-vim.keymap.set('n', '<A-Right>', ':vertical resize -2<CR>', opts)
-vim.keymap.set('n', '<A-Left>', ':vertical resize +2<CR>', opts)
+vim.keymap.set('n', '<A-S-Up>', ':resize -2<CR>', opts)
+vim.keymap.set('n', '<A-S-Down>', ':resize +2<CR>', opts)
+vim.keymap.set('n', '<A-S-Right>', ':vertical resize -2<CR>', opts)
+vim.keymap.set('n', '<A-S-Left>', ':vertical resize +2<CR>', opts)
 
 -- Window Swithing
 vim.keymap.set('n', '<A-l>', '<C-w>w', opts)
