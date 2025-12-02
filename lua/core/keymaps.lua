@@ -51,3 +51,6 @@ vim.keymap.set('v', 'p', '"_dP', opts)
 vim.api.nvim_create_user_command('RWEOL', function()
   vim.cmd([[%s/\r//g]])
 end, {})
+
+-- Exit terminal mode
+vim.keymap.set('t', '<Esc>', [[<C-\><C-n>]], { noremap = true })

@@ -103,3 +103,4 @@ Here's a table with my custom keybindings, grouped by category:
 |                       | `<leader>zt` (Visual)       | Generate Tests                                |
 |                       | `<leader>zm` (Normal)       | Generate Commit Message                       |
 |                       | `<leader>zs` (Visual)       | Generate Commit for Selection                 |
+| **Terminal**          | `<Esc>` (Terminal)            | Exit terminal mode                                |
