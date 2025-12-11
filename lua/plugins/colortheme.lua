@@ -1,17 +1,10 @@
 return {
-  'folke/tokyonight.nvim',
+  'tinted-theming/tinted-vim',
   lazy = false,
   priority = 1000,
   config = function()
-    require('tokyonight').setup({
-      style = 'night',
-      transparent = true,
-      styles = {
-        comments = { italic = true },
-      },
-    })
 
-    vim.cmd('colorscheme tokyonight')
+    vim.cmd('colorscheme base16-ayu-dark')
     vim.cmd('set cursorline')
 
     vim.api.nvim_set_hl(0, 'CursorLineNr', { fg = "#FFCC00" })
