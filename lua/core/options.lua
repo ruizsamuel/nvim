@@ -51,3 +51,5 @@ vim.api.nvim_create_autocmd({"BufRead", "BufNewFile"}, {
   end
 })
 
+vim.opt.termguicolors = false  -- Desactiva true color
+vim.opt.t_Co = 16
