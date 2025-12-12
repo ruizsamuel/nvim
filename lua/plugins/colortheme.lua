@@ -68,6 +68,10 @@ return {
     vim.api.nvim_set_hl(0, 'NeoTreeCursorLine', { ctermbg = 8 })
     vim.api.nvim_set_hl(0, 'NeoTreeIndentMarker', { ctermfg = 8 })
 
+    -- Modo Visual (alto contraste en 16 colores)
+    vim.api.nvim_set_hl(0, 'Visual', { ctermbg = 8, ctermfg = 15, bold = true })
+    vim.api.nvim_set_hl(0, 'VisualNOS', { ctermbg = 8, ctermfg = 15, bold = true })
+
     -- NeoTree git status (16-colores estilo Tokyo Night)
     vim.api.nvim_set_hl(0, "NeoTreeGitModified", { ctermfg = 11, bold = true })
     vim.api.nvim_set_hl(0, "NeoTreeGitAdded", { ctermfg = 10 })
