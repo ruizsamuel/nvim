@@ -59,6 +59,17 @@ return {
     vim.api.nvim_set_hl(0, 'CursorLineNr', { ctermfg = 12, bold = true })
     vim.api.nvim_set_hl(0, 'Whitespace', { ctermfg = 8 })
 
+    -- NeoTree git status (16-colores estilo Tokyo Night)
+    vim.api.nvim_set_hl(0, "NeoTreeGitModified", { ctermfg = 11, bold = true })
+    vim.api.nvim_set_hl(0, "NeoTreeGitAdded", { ctermfg = 10 })
+    vim.api.nvim_set_hl(0, "NeoTreeGitDeleted", { ctermfg = 9 })
+    vim.api.nvim_set_hl(0, "NeoTreeGitRenamed", { ctermfg = 14 })
+    vim.api.nvim_set_hl(0, "NeoTreeGitUntracked", { ctermfg = 14 })
+    vim.api.nvim_set_hl(0, "NeoTreeGitStaged", { ctermfg = 10, bold = true })
+    vim.api.nvim_set_hl(0, "NeoTreeGitUnstaged", { ctermfg = 11 })
+    vim.api.nvim_set_hl(0, "NeoTreeGitConflict", { ctermfg = 9, bold = true })
+    vim.api.nvim_set_hl(0, "NeoTreeGitIgnored", { ctermfg = 8 })
+
     -- Para Neotree con fondo transparente
     vim.api.nvim_set_hl(0, "NeoTreeNormal", { bg = "NONE", ctermbg = "NONE" })
     vim.api.nvim_set_hl(0, "NeoTreeNormalNC", { bg = "NONE", ctermbg = "NONE" })
