@@ -20,6 +20,14 @@ return {
     vim.cmd('colorscheme catppuccin')
     vim.cmd('set cursorline')
 
+    -- Resaltado mejorado para keywords
+    vim.api.nvim_set_hl(0, '@keyword', { fg = "#CBA6F7", bold = true })
+    vim.api.nvim_set_hl(0, '@keyword.function', { fg = "#CBA6F7", bold = true })
+    vim.api.nvim_set_hl(0, '@keyword.return', { fg = "#CBA6F7", bold = true })
+    vim.api.nvim_set_hl(0, '@type', { fg = "#F5C2E7" })
+    vim.api.nvim_set_hl(0, '@function', { fg = "#89B4FA" })
+    vim.api.nvim_set_hl(0, '@variable', { fg = "#CDD6F4" })
+
     vim.api.nvim_set_hl(0, 'CursorLineNr', { fg = "#A6E3A1" })
     vim.cmd [[highlight Whitespace guifg=#F38BA8]]
 
