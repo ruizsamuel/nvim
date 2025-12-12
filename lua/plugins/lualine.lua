@@ -1,6 +1,40 @@
 return {
   'nvim-lualine/lualine.nvim',
   config = function()
+    -- Tema 16-colores inspirado en Tokyo Night para statusline
+    local tn16 = {
+      normal = {
+        a = { fg = 15, bg = 12, gui = 'bold', ctermfg = 15, ctermbg = 12 }, -- azul brillante
+        b = { fg = 15, bg = 8, ctermfg = 15, ctermbg = 8 }, -- gris medio
+        c = { fg = 7, bg = 0, ctermfg = 7, ctermbg = 0 }, -- fondo oscuro
+      },
+      insert = {
+        a = { fg = 0, bg = 10, gui = 'bold', ctermfg = 0, ctermbg = 10 }, -- verde
+        b = { fg = 15, bg = 8, ctermfg = 15, ctermbg = 8 },
+        c = { fg = 7, bg = 0, ctermfg = 7, ctermbg = 0 },
+      },
+      visual = {
+        a = { fg = 0, bg = 13, gui = 'bold', ctermfg = 0, ctermbg = 13 }, -- magenta
+        b = { fg = 15, bg = 8, ctermfg = 15, ctermbg = 8 },
+        c = { fg = 7, bg = 0, ctermfg = 7, ctermbg = 0 },
+      },
+      replace = {
+        a = { fg = 0, bg = 9, gui = 'bold', ctermfg = 0, ctermbg = 9 }, -- rojo
+        b = { fg = 15, bg = 8, ctermfg = 15, ctermbg = 8 },
+        c = { fg = 7, bg = 0, ctermfg = 7, ctermbg = 0 },
+      },
+      command = {
+        a = { fg = 0, bg = 11, gui = 'bold', ctermfg = 0, ctermbg = 11 }, -- amarillo
+        b = { fg = 15, bg = 8, ctermfg = 15, ctermbg = 8 },
+        c = { fg = 7, bg = 0, ctermfg = 7, ctermbg = 0 },
+      },
+      inactive = {
+        a = { fg = 8, bg = 0, ctermfg = 8, ctermbg = 0 },
+        b = { fg = 8, bg = 0, ctermfg = 8, ctermbg = 0 },
+        c = { fg = 8, bg = 0, ctermfg = 8, ctermbg = 0 },
+      },
+    }
+
     local mode = {
       'mode',
       fmt = function(str)
@@ -40,7 +74,7 @@ return {
     require('lualine').setup {
       options = {
         icons_enabled = true,
-        theme = 'iceberg_dark', -- Set theme based on environment variable
+        theme = tn16,
         -- Some useful glyphs:
         -- https://www.nerdfonts.com/cheat-sheet
         --        
