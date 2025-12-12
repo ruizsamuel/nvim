@@ -59,6 +59,15 @@ return {
     vim.api.nvim_set_hl(0, 'CursorLineNr', { ctermfg = 12, bold = true })
     vim.api.nvim_set_hl(0, 'Whitespace', { ctermfg = 8 })
 
+    -- Selección en listas (Neo-tree, Telescope, LSP/CMP) con 16 colores
+    vim.api.nvim_set_hl(0, 'CursorLine', { ctermbg = 8 })
+    vim.api.nvim_set_hl(0, 'PmenuSel', { ctermbg = 8, ctermfg = 15, bold = true })
+    vim.api.nvim_set_hl(0, 'Pmenu', { ctermbg = 0, ctermfg = 7 })
+    vim.api.nvim_set_hl(0, 'TelescopeSelection', { ctermbg = 8, ctermfg = 15, bold = true })
+    vim.api.nvim_set_hl(0, 'TelescopeSelectionCaret', { ctermfg = 13, bold = true })
+    vim.api.nvim_set_hl(0, 'NeoTreeCursorLine', { ctermbg = 8 })
+    vim.api.nvim_set_hl(0, 'NeoTreeIndentMarker', { ctermfg = 8 })
+
     -- NeoTree git status (16-colores estilo Tokyo Night)
     vim.api.nvim_set_hl(0, "NeoTreeGitModified", { ctermfg = 11, bold = true })
     vim.api.nvim_set_hl(0, "NeoTreeGitAdded", { ctermfg = 10 })
