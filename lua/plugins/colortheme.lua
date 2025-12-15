@@ -28,6 +28,12 @@ return {
     vim.api.nvim_set_hl(0, '@keyword.function', { ctermfg = 13, bold = true })
     vim.api.nvim_set_hl(0, '@keyword.return', { ctermfg = 13, bold = true })
     vim.api.nvim_set_hl(0, '@keyword.import', { ctermfg = 5, bold = true })
+    -- Respaldo para sintaxis sin Treesitter
+    vim.api.nvim_set_hl(0, 'Statement', { ctermfg = 13, bold = true })
+    vim.api.nvim_set_hl(0, 'Conditional', { ctermfg = 13, bold = true })
+    vim.api.nvim_set_hl(0, 'Repeat', { ctermfg = 13, bold = true })
+    vim.api.nvim_set_hl(0, 'Keyword', { ctermfg = 13, bold = true })
+    vim.api.nvim_set_hl(0, 'Label', { ctermfg = 5, bold = true })
     
     -- Funciones (azul brillante)
     vim.api.nvim_set_hl(0, '@function', { ctermfg = 12, bold = true })
