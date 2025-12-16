@@ -62,8 +62,8 @@ return {
     vim.api.nvim_set_hl(0, '@variable', { ctermfg = 7 })
     vim.api.nvim_set_hl(0, '@variable.builtin', { ctermfg = 9 })
     
-    -- Comentarios (gris medio visible sobre CursorLine)
-    vim.api.nvim_set_hl(0, 'Comment', { ctermfg = 6, italic = true })
+    -- Comentarios (gris)
+    vim.api.nvim_set_hl(0, 'Comment', { ctermfg = 7, italic = true })
     -- Comentarios diagnosticados como innecesarios (imports sin usar)
     vim.api.nvim_set_hl(0, 'DiagnosticUnnecessary', { ctermfg = 8, underline = true })
     vim.api.nvim_set_hl(0, 'LspInlayHint', { ctermfg = 8, ctermbg = 0, italic = true })
