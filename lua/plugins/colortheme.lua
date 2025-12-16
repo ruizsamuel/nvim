@@ -38,7 +38,7 @@ return {
     -- Funciones (azul brillante)
     vim.api.nvim_set_hl(0, '@function', { ctermfg = 12, bold = true })
     vim.api.nvim_set_hl(0, '@function.call', { ctermfg = 12 })
-    vim.api.nvim_set_hl(0, '@method', { ctermfg = 12 })
+    vim.api.nvim_set_hl(0, '@method', { ctermfg = 14, bold = true }) -- métodos en cyan para distinguir
     
     -- Types (cyan brillante)
     vim.api.nvim_set_hl(0, '@type', { ctermfg = 14 })
@@ -60,7 +60,10 @@ return {
     vim.api.nvim_set_hl(0, '@variable.builtin', { ctermfg = 9 })
     
     -- Comentarios (gris)
-    vim.api.nvim_set_hl(0, 'Comment', { ctermfg = 8, italic = true })
+    vim.api.nvim_set_hl(0, 'Comment', { ctermfg = 7, italic = true })
+    -- Comentarios diagnosticados como innecesarios (imports sin usar)
+    vim.api.nvim_set_hl(0, 'DiagnosticUnnecessary', { ctermfg = 8, underline = true })
+    vim.api.nvim_set_hl(0, 'LspInlayHint', { ctermfg = 8, ctermbg = 0, italic = true })
     
     vim.api.nvim_set_hl(0, 'CursorLineNr', { ctermfg = 12, bold = true })
     vim.api.nvim_set_hl(0, 'Whitespace', { ctermfg = 8 })
@@ -77,6 +80,9 @@ return {
     -- Modo Visual (alto contraste en 16 colores)
     vim.api.nvim_set_hl(0, 'Visual', { ctermbg = 8, ctermfg = 15, bold = true })
     vim.api.nvim_set_hl(0, 'VisualNOS', { ctermbg = 8, ctermfg = 15, bold = true })
+
+    -- Paréntesis coincidente más visible
+    vim.api.nvim_set_hl(0, 'MatchParen', { ctermfg = 11, ctermbg = 0, bold = true })
 
     -- NeoTree git status (16-colores estilo Tokyo Night)
     vim.api.nvim_set_hl(0, "NeoTreeGitModified", { ctermfg = 11, bold = true })
