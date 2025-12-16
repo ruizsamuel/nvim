@@ -38,8 +38,10 @@ return {
     -- Funciones / métodos (azul estilo captura)
     vim.api.nvim_set_hl(0, '@function', { ctermfg = 4, bold = true })
     vim.api.nvim_set_hl(0, '@function.call', { ctermfg = 4 })
+    vim.api.nvim_set_hl(0, '@function.method', { ctermfg = 4, bold = true })
     vim.api.nvim_set_hl(0, '@method', { ctermfg = 4, bold = true })
     vim.api.nvim_set_hl(0, '@method.call', { ctermfg = 4 })
+    vim.api.nvim_set_hl(0, '@constructor', { ctermfg = 4, bold = true })
     
     -- Types (cyan brillante)
     vim.api.nvim_set_hl(0, '@type', { ctermfg = 14 })
