@@ -67,6 +67,12 @@ return {
     -- Comentarios diagnosticados como innecesarios (imports sin usar)
     vim.api.nvim_set_hl(0, 'DiagnosticUnnecessary', { ctermfg = 8, underline = true })
     vim.api.nvim_set_hl(0, 'LspInlayHint', { ctermfg = 8, ctermbg = 0, italic = true })
+
+    -- Diagnósticos en rojo visible
+    vim.api.nvim_set_hl(0, 'DiagnosticError', { ctermfg = 9, bold = true })
+    vim.api.nvim_set_hl(0, 'DiagnosticUnderlineError', { ctermfg = 9, underline = true })
+    vim.api.nvim_set_hl(0, 'LspDiagnosticsDefaultError', { ctermfg = 9, bold = true })
+    vim.api.nvim_set_hl(0, 'LspDiagnosticsUnderlineError', { ctermfg = 9, underline = true })
     
     vim.api.nvim_set_hl(0, 'CursorLineNr', { ctermfg = 12, bold = true })
     vim.api.nvim_set_hl(0, 'Whitespace', { ctermfg = 8 })
