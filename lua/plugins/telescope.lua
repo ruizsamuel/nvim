@@ -26,6 +26,32 @@ end
 -- Call the function to check for ripgrep and fd when starting Neovim
 check_dependencies()
 
+-- Shim for older/newer nvim-treesitter versions where ft_to_lang may be missing
+local function ensure_treesitter_ft_to_lang()
+  local ok, parsers = pcall(require, 'nvim-treesitter.parsers')
+  if not ok or parsers.ft_to_lang then
+    return
+  end
+
+  local lang_api = vim.treesitter and vim.treesitter.language
+  parsers.ft_to_lang = function(ft)
+    if lang_api and lang_api.get_lang then
+      local ok_lang, lang = pcall(lang_api.get_lang, ft)
+      if ok_lang and lang then
+        return lang
+      end
+    end
+
+    if parsers.filetype_to_parsername then
+      return parsers.filetype_to_parsername(ft)
+    end
+
+    return ft
+  end
+end
+
+ensure_treesitter_ft_to_lang()
+
 return {
   'nvim-telescope/telescope.nvim',
   event = 'VimEnter',
