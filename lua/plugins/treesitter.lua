@@ -1,5 +1,6 @@
 return { -- Highlight, edit, and navigate code
   'nvim-treesitter/nvim-treesitter',
+  version = false, -- Always track latest; avoids old tag without ft_to_lang
   build = function()
     pcall(vim.cmd, 'TSUpdateSync')
   end,
