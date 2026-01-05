@@ -68,11 +68,20 @@ return {
     vim.api.nvim_set_hl(0, 'DiagnosticUnnecessary', { ctermfg = 8, underline = true })
     vim.api.nvim_set_hl(0, 'LspInlayHint', { ctermfg = 8, ctermbg = 0, italic = true })
 
-    -- Diagnósticos en rojo visible
-    vim.api.nvim_set_hl(0, 'DiagnosticError', { ctermfg = 9, bold = true })
-    vim.api.nvim_set_hl(0, 'DiagnosticUnderlineError', { ctermfg = 9, underline = true })
-    vim.api.nvim_set_hl(0, 'LspDiagnosticsDefaultError', { ctermfg = 9, bold = true })
-    vim.api.nvim_set_hl(0, 'LspDiagnosticsUnderlineError', { ctermfg = 9, underline = true })
+    -- Diagnósticos con fondo para máxima visibilidad (16 colores)
+    -- Errores: fondo rojo, texto claro
+    vim.api.nvim_set_hl(0, 'DiagnosticError', { ctermfg = 15, ctermbg = 1, bold = true })
+    vim.api.nvim_set_hl(0, 'DiagnosticUnderlineError', { ctermfg = 15, ctermbg = 1, underline = true })
+    vim.api.nvim_set_hl(0, 'LspDiagnosticsDefaultError', { ctermfg = 15, ctermbg = 1, bold = true })
+    vim.api.nvim_set_hl(0, 'LspDiagnosticsUnderlineError', { ctermfg = 15, ctermbg = 1, underline = true })
+    -- Warnings: fondo amarillo, texto oscuro para contraste
+    vim.api.nvim_set_hl(0, 'DiagnosticWarn', { ctermfg = 0, ctermbg = 11, bold = true })
+    vim.api.nvim_set_hl(0, 'DiagnosticUnderlineWarn', { ctermfg = 0, ctermbg = 11, underline = true })
+    vim.api.nvim_set_hl(0, 'LspDiagnosticsDefaultWarning', { ctermfg = 0, ctermbg = 11, bold = true })
+    vim.api.nvim_set_hl(0, 'LspDiagnosticsUnderlineWarning', { ctermfg = 0, ctermbg = 11, underline = true })
+    -- Virtual text / signs: mantener coherencia
+    vim.api.nvim_set_hl(0, 'DiagnosticVirtualTextError', { ctermfg = 15, ctermbg = 1, bold = true })
+    vim.api.nvim_set_hl(0, 'DiagnosticVirtualTextWarn', { ctermfg = 0, ctermbg = 11, bold = true })
     
     vim.api.nvim_set_hl(0, 'CursorLineNr', { ctermfg = 12, bold = true })
     vim.api.nvim_set_hl(0, 'Whitespace', { ctermfg = 8 })
