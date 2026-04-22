@@ -42,3 +42,6 @@ set_indent({ "xml", "vue" }, 2, 2, true)
 
 -- Configuración para PHP (4 espacios)
 set_indent("php", 4, 4, true)
+
+-- Configuración para make
+set_indent("make", 4, 4, false)
