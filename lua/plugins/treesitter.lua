@@ -53,6 +53,20 @@ return { -- Highlight, edit, and navigate code
     end
 
     configs.setup(opts)
+
+    -- Neovim 0.12 changed match[capture_id] to return TSNode[] instead of TSNode.
+    -- nvim-treesitter (archived master) never adapted to this, crashing render-markdown.nvim.
+    local aliases = { ex = "elixir", pl = "perl", sh = "bash", uxn = "uxntal", ts = "typescript" }
+    vim.treesitter.query.add_directive("set-lang-from-info-string!", function(match, _, bufnr, pred, metadata)
+      local node = match[pred[2]]
+      if not node then return end
+      if type(node) == "table" then node = node[1] end
+      if not node then return end
+      local text = vim.treesitter.get_node_text(node, bufnr):lower()
+      metadata["injection.language"] = vim.filetype.match({ filename = "a." .. text })
+        or aliases[text]
+        or text
+    end, { force = true, all = false })
   end,
   -- There are additional nvim-treesitter modules that you can use to interact
   -- with nvim-treesitter. You should go explore a few and see what interests you:
